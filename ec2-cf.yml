@@ -7,7 +7,6 @@ Resources:
     Properties:
       ImageId: ami-0c55b159cbfafe1f0  # Replace with a suitable AMI ID
       InstanceType: t2.micro  # Underpowered instance type
-      KeyName:  # Missing Key Pair
       SecurityGroups:
         - Ref: InsecureSecurityGroup
       UserData:
@@ -15,8 +14,6 @@ Resources:
           #!/bin/bash
           echo "Hello, World!" > index.html
           nohup python -m SimpleHTTPServer 80 &  # Running a web server without proper security
-
-Resources:
   InsecureSecurityGroup:
     Type: AWS::EC2::SecurityGroup
     Properties:
