@@ -1,0 +1,9 @@
+{
+  "Settings": {
+    "Instances": {
+      "PrivateKey": "test-private-key",
+      "PublicKey": "test-public-key",
+      "Password": "password"
+    }
+  }
+}
