@@ -1,0 +1,22 @@
+global:
+  # Used for connector tunnel
+  connectServerUrl: https://connect.asia-1.codesec.aquasec.com
+  # Used for scanning scheduling
+  scanServerUrl: https://scan.asia-1.codesec.aquasec.com
+  # Used for scanning upstream
+  aquaServerUrl: https://api.asia-1.supply-chain.cloud.aquasec.com
+  # Used for authentication
+  cspmServerUrl: https://asia-1.api.cloudsploit.com
+  brokerToken: 610b5a4e-67ee-4630-8426-1521c33c2561
+
+credentials:
+  createSecret: true
+  secretName: aqua-codesec-secrets
+  aqua_key: AQUA_KEY
+  aqua_secret: AQUA_SECRET
+
+integration:
+  source: gitlab_server
+  credentials:
+    username: GITLAB_USERNAME
+    password: AQUASEC_TOKEN_GITLAB
