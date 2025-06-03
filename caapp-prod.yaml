@@ -1,0 +1,26 @@
+replicas: 1
+properties:
+  server_instance_name: "k8"
+ingress:
+  domain: p************
+  host_external: "s************"
+  path_external: "p************"
+strategy: Recreate
+env:
+  PACKAGES_JSON: null     
+  EAP_ADMIN_USER: "admin" 
+  EAP_ADMIN_PASS: "pasword@21"  
+  EAP_APP_USER: "app"
+  EAP_APP_PASS: "passwrd@21"   
+secrets:
+  - name: redis-credentialstore
+    subPath: /cache
+    mountPath: /tmp/cache
+configmaps:
+  jboss-web.xml:
+    type: data
+    mountPath: /tmp/cache
+    data:
+      jboss-web.xml: |
+        <?xml version="1.0"?>
+        <jboss-web>
