@@ -1,0 +1,34 @@
+# Application Configuration
+spring:
+  jpa:
+    show-sql: false
+  application:
+    name: fi*************
+  datasource:
+    username: "sa"          # Detected
+    password: "*********"   # Detected
+    url: "jdbc:sqlserver://***********"
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+spring-ais-common-security:
+  validation: ${SECURITY_VALIDATION:WSO2}
+  wso2:
+    key:
+      url: "http://*********"
+    client:
+      id: "GmkG3VvCD96gpcbCUvQMQo8zmJV4a"
+      secret: "passwrd@12"   #  Not detected
+
+filter:
+  env: "CPP"
+  stage: "DEV"
+  domain: "FIT"
+
+kafka:
+  mode: "on"
+  user: "tst_Fin_Trans"
+  password: "secret@212"          
+
+camunda:
+  mode: "on"
+  user: "tst_Fin_Trans"
