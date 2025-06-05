@@ -11,7 +11,7 @@ global:
 credentials:
   createSecret: true
   secretName: aqua-codesec-secrets
-  aqua_key: ${{ secrets.AQUA_KEY }}
+  aqua_key: AQUA_KEY
   aqua_secret: AQUA_SECRET
 
 # SCM configurations:
@@ -20,7 +20,7 @@ integration:
   source: "github_sever"
   url: "https://test-repo.github.com"
   username: "teja"
-  password: SEC_GITHUB_TOKEN
+  password: AQUASEC_GITHUB_TOKEN
 
 # Optionally add ssl ca cert and client cert/key for ssl connection to the SCM/CI server:
 ssl:
