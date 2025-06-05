@@ -20,7 +20,7 @@ integration:
   source: "github_sever"
   url: "https://test-repo.github.com"
   username: "teja"
-  password: "passwrd21"
+  password: SEC_GITHUB_TOKEN
 
 # Optionally add ssl ca cert and client cert/key for ssl connection to the SCM/CI server:
 ssl:
