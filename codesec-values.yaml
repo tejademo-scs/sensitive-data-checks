@@ -11,7 +11,7 @@ global:
 credentials:
   createSecret: true
   secretName: aqua-codesec-secrets
-  aqua_key: AQUA_KEY
+  aqua_key: ${{ secrets.AQUA_KEY }}
   aqua_secret: AQUA_SECRET
 
 # SCM configurations:
